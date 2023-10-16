@@ -58,24 +58,7 @@ async function getGPA() {
 	const Data = doc.querySelectorAll('tr');
 
 	const Credits = {
-		"4th Form Art Appreciation": 2,
-		"4th Form IGCSE World Literature": 4,
-		"4th Form Lengua Española": 4,
-		"4th Form Nociones de Mandarín": 4,
-		"4th Form Pre-Engineering & Advanced Technology": 1,
-		"4th Form Educación Física": 1,
-		"4th Form IGCSE Mathematics- Extended": 5,
-		"4th Form IGCSE Mathematics": 5,
-		"4th Form IGCSE Science": 4,
-		"4th Form Formación Integral": 1,
-		"4th Form Geog. e Hist. de América/Pueblos Caribe": 3,
-		"4th Form Chaucer Homeroom": null,
-		"4th Form Metodología": 1,
-		"4th Form American History": 3,
-		"Cambridge International - Students and Parents": null,
-		"College and Career Presentations & Preparations (Promo2026)": null,
-		"3rd and 4th Form Elective": 1,
-		"4th Form Francés": 4
+		
 	};
 
 	let sumCredits = 0;
@@ -170,24 +153,7 @@ getGPA().then((result) => {
 			const Grades = {};
 
 			const Credits = {
-				"4th Form Art Appreciation": 2,
-				"4th Form IGCSE World Literature": 4,
-				"4th Form Lengua Española": 4,
-				"4th Form Nociones de Mandarín": 4,
-				"4th Form Pre-Engineering & Advanced Technology": 1,
-				"4th Form Educación Física": 1,
-				"4th Form IGCSE Mathematics- Extended": 5,
-				"4th Form IGCSE Mathematics": 5,
-				"4th Form IGCSE Science": 4,
-				"4th Form Formación Integral": 1,
-				"4th Form Geog. e Hist. de América/Pueblos Caribe": 3,
-				"4th Form Chaucer Homeroom": null,
-				"4th Form Metodología": 1,
-				"4th Form American History": 3,
-				"Cambridge International - Students and Parents": null,
-				"College and Career Presentations & Preparations (Promo2026)": null,
-				"3rd and 4th Form Elective": 1,
-				"4th Form Francés": 4
+   
 			};
 
 			let sumCredits = 0;
