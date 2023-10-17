@@ -58,7 +58,6 @@ async function getGPA() {
 	const Data = doc.querySelectorAll('tr');
 
 	const Credits = {
-		
 	};
 
 	let sumCredits = 0;
@@ -153,7 +152,6 @@ getGPA().then((result) => {
 			const Grades = {};
 
 			const Credits = {
-   
 			};
 
 			let sumCredits = 0;
