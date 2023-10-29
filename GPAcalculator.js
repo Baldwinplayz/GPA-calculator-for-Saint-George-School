@@ -58,6 +58,22 @@ async function getGPA() {
 	const Data = doc.querySelectorAll('tr');
 
 	const Credits = {
+		"College and Career Presentations & Preparations (Promo2027)": null,
+		"3rd Form Educación Física": 1,
+		"3rd Form Artistic Expression": 2,
+		"Cambridge International - Students and Parents": null,
+		"3rd Form Paz Homeroom": null,
+		"3rd Form Pre-Engineering & Advanced Technology": 1,
+		"3rd Form Formación Integral": 1,
+		"3rd Form Nociones de Mandarin": 4,
+		"3rd Form IGCSE Mathematics-Extended": 5,
+		"3rd Form World History": 3,
+		"3rd Form IGCSE Science": 4,
+		"3rd Form Lengua Española": 4,
+		"3rd Form IGCSE World Literature": 4,
+		"3rd Form Hist. de la Civilización/Geog. Mundial": 3,
+		"3rd and 4th Form Elective": 1,
+		"3rd Form Francés": 4
 	};
 
 	let sumCredits = 0;
@@ -121,7 +137,12 @@ getGPA().then((result) => {
 		corteOptions[0].setAttribute("selected", "selected");
 		corteOptions[0].setAttribute("disabled", "true");
 		
-		const corteName = ["Select a grading period...", "Corte #1", "Corte #2", "Midterm Exam", "Corte #3", "Corte #4", "Final Exam"];
+		const corteName = [];
+
+		const itemsInSelector = document.getElementsByClassName("grading_periods_selector content-box")[0].getElementsByTagName("option")
+		for (let i = 0; i < 7; i++) {
+			corteName.push(itemsInSelector[i].innerHTML)
+		}
 
 		for (let i = 0; i < corteName.length; i++) {
 			corteOptions[i].innerHTML = corteName[i];
@@ -152,6 +173,22 @@ getGPA().then((result) => {
 			const Grades = {};
 
 			const Credits = {
+				"College and Career Presentations & Preparations (Promo2027)": null,
+				"3rd Form Educación Física": 1,
+				"3rd Form Artistic Expression": 2,
+				"Cambridge International - Students and Parents": null,
+				"3rd Form Paz Homeroom": null,
+				"3rd Form Pre-Engineering & Advanced Technology": 1,
+				"3rd Form Formación Integral": 1,
+				"3rd Form Nociones de Mandarin": 4,
+				"3rd Form IGCSE Mathematics-Extended": 5,
+				"3rd Form World History": 3,
+				"3rd Form IGCSE Science": 4,
+				"3rd Form Lengua Española": 4,
+				"3rd Form IGCSE World Literature": 4,
+				"3rd Form Hist. de la Civilización/Geog. Mundial": 3,
+				"3rd and 4th Form Elective": 1,
+				"3rd Form Francés": 4
 			};
 
 			let sumCredits = 0;
