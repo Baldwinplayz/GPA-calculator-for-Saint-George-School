@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
 	"name": "GPA calculator for SGS",
-	"version": "9.1.1.2",
-	"description": "With this program, Canvas now has a sidebar icon, grades icon, and it gives you your GPA. This build work for 3rd form Mandarin, French, and Math extended",
+	"version": "11.1.1.4",
+	"description": "With this program, Canvas now has a sidebar icon, grades icon, and it gives you your GPA.",
 	"permissions": [
 	  "activeTab"
 	],
@@ -29,4 +29,3 @@
 	  "128": "images/icon128.png"
 	}
   }
-  
